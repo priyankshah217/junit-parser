@@ -1,4 +1,4 @@
-module junit-parser
+module github.com/priyankshah217/junit-parser
 
 go 1.22.1
 
