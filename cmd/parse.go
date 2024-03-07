@@ -3,11 +3,12 @@ package cmd
 import (
 	"encoding/xml"
 	"fmt"
-	"github.com/spf13/cobra"
 	"io"
 	"os"
 	"regexp"
 	"strings"
+
+	"github.com/spf13/cobra"
 )
 
 var filePath string
