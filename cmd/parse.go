@@ -108,9 +108,10 @@ var parseCmd = &cobra.Command{
 			}
 		}
 		for i := range testResults {
-			fmt.Println("Test Case Name:", testResults[i].testCaseName)
-			fmt.Println("Root Cause:", testResults[i].rootCause.rootCauseMessage)
-			fmt.Println("Issue Type:", testResults[i].rootCause.issueType)
+			cmd.Printf("%d ------------- Test Case Name: %s ------------- \n", i+1, testResults[i].testCaseName)
+			cmd.Printf("Root Cause: %s \n", testResults[i].rootCause.rootCauseMessage)
+			cmd.Printf("Issue Type: %s \n", testResults[i].rootCause.issueType)
+			cmd.Println("---------------------------------------------------")
 		}
 	},
 }
